@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SensorList from "./components/sensorList";
+import ChartSensor from "./components/chartSensor";
+import Navbar from "./components/navbar";
+import About from "./components/about";
+import Notifikasi from "./components/notifikasi";
+import { Helmet } from 'react-helmet'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	return (
+		<div className="bg-green-50 max-lg:h-screen lg:h-screen md:h-full sm:h-full">
+		<Helmet>
+			<title>Air Guard</title>
+		</Helmet>
+			<BrowserRouter>
+				<Navbar />
+				<Notifikasi/>
+					<Routes>
+						<Route path='/' element={<SensorList />} />
+						<Route path='/detail' element={<ChartSensor />} />
+						<Route path='/about' element={<About />} />
+					</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
-
-export default App;
