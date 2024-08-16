@@ -35,3 +35,4 @@ Untuk menjalankan proyek ini, pastikan Anda telah menginstal Node.js. Repositori
 
 -   Jika Anda mengalami masalah, pastikan semua dependensi telah terinstal dengan benar dan konfigurasi lingkungan sesuai.
 -   jika ada pertanyaan kirim email ke ditaputra1296@gmail.com
+-   Repository ini terhubung dengan [esp32_mqtt_mq135_GP2Y1010AU0F](https://github.com/DitaPutraPratama/esp32_mqtt_mq135_GP2Y1010AU0F) dan [express_mqtt_mysql](https://github.com/DitaPutraPratama/express_mqtt_mysql) agar menjadi 1 proyek IoT
